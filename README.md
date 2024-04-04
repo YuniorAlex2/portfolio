@@ -9,4 +9,4 @@ Currently, two official plugins are available:
 
 # Portfolio
 
-This is a portfolio where i'm going to place all my projects testing branches
+This is a portfolio where i'm going to place all my projects
