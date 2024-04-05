@@ -3,10 +3,12 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import GlobalStyles from "./pages/styles/GlobalStyles";
 
 function App() {
   return (
     <div>
+      <GlobalStyles />
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
