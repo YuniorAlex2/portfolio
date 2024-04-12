@@ -12,15 +12,19 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: "en",
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
+    lng: "es",
     resources: {
       en: {
         translation: {
-          // here we will place our translations...
-          key: "hello world",
+          greeting: "Welcome",
+          description: "My name is yunior, and i am a software developer",
+        },
+      },
+      es: {
+        translation: {
+          greeting: "Bienvenido",
+          description:
+            "Mi nombre es yunior, y soy un desarrollador de software",
         },
       },
     },

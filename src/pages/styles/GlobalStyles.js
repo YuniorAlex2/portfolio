@@ -25,6 +25,26 @@ const GlobalStyles = createGlobalStyle`
   --color-grey-700: #e5e7eb;
   --color-grey-800: #f3f4f6;
   --color-grey-900: #f9fafb;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
+
+  /* Indigo */
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c7d2fe;
+  --color-brand-500: #6366f1;
+  --color-brand-600: #4f46e5;
+  --color-brand-700: #4338ca;
+  --color-brand-800: #3730a3;
+  --color-brand-900: #312e81;
+
+
+  --border-radius-tiny: 3px;
+  --border-radius-sm: 5px;
+  --border-radius-md: 7px;
+  --border-radius-lg: 9px;
 }
 
 * {

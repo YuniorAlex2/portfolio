@@ -4,19 +4,22 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import GlobalStyles from "./pages/styles/GlobalStyles";
+import { SideBarProvider } from "./context/SidebarContext";
 
 function App() {
   return (
     <div>
-      <GlobalStyles />
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="skills" element={<Skills />} />
-          <Route path="contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+      <SideBarProvider>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="skills" element={<Skills />} />
+            <Route path="contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
+      </SideBarProvider>
     </div>
   );
 }
