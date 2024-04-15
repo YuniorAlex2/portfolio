@@ -4,10 +4,14 @@ import { HiOutlineMenu } from "react-icons/hi";
 import ButtonIcon from "./ButtonIcon";
 import SideBar from "./SideBar";
 import { useSidebar } from "../context/SidebarContext";
+import LogoName from "./LogoName";
 
 const StyledAppNav = styled.nav`
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   ul {
     padding: 1.2rem 4.8rem;
@@ -57,6 +61,7 @@ function AppNav() {
 
   return (
     <StyledAppNav>
+      <LogoName />
       <ul>
         <li>
           <LanguageBotton />

@@ -14,6 +14,15 @@ const GlobalStyles = createGlobalStyle`
 :root {
   --color-dark-0: #1d1d20;
 
+      /* red */
+  --color-red-700: #b91c1c;
+  --color-red-600: #dc2626;
+  --color-red-500: #ef4444;
+
+    /* blue */
+  --color-blue-900: #1e3a8a;
+  
+    /*grey */
   --color-grey-0: #18212f;
   --color-grey-50: #111827;
   --color-grey-100: #1f2937;
@@ -59,11 +68,35 @@ html {
 }
 
 body {
-    font-family: 'Monserrat', sans-serif;
-    color: var(--color-grey-600);
     background-color: var(--color-dark-0);
+    color: var(--color-grey-800);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
     line-height: 1.6;
 }
+
+ section {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    align-items: center;
+    justify-content: center;
+    gap: 1.7rem;
+    text-align: center;
+  }
+
+  section ul {
+    display: flex;
+    list-style: none;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3rem;
+    text-align: center;
+  }
+
 `;
 
 export default GlobalStyles;

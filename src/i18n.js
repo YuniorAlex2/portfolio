@@ -12,12 +12,20 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    lng: "es",
+    fallbackLng: "es",
+    returnObjects: true,
     resources: {
       en: {
         translation: {
           greeting: "Welcome",
           description: "My name is yunior, and i am a software developer",
+          buttons: {
+            btn1: "Home",
+            btn2: "Projects",
+            btn3: "Skills",
+            btn4: "Contact",
+            btn5: "Contact Me",
+          },
         },
       },
       es: {
@@ -25,6 +33,13 @@ i18n
           greeting: "Bienvenido",
           description:
             "Mi nombre es yunior, y soy un desarrollador de software",
+          buttons: {
+            btn1: "Casa",
+            btn2: "Projectos",
+            btn3: "Habilidades",
+            btn4: "Contactos",
+            btn5: "Para Contactarme",
+          },
         },
       },
     },

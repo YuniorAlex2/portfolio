@@ -1,13 +1,17 @@
 import AppNav from "../ui/AppNav";
-import Heading from "../ui/Heading";
+import LinkItem from "../components/LinkItem";
+import StyledPageContainer from "../ui/PageContainer";
 
 function Contact() {
   return (
-    <div>
+    <StyledPageContainer>
       <AppNav />
-      <Heading as="h1">Contact</Heading>
-      <Heading as="h3">description for the content test</Heading>
-    </div>
+      <section>
+        <h1>Contact Me!!</h1>
+        <h2>You can get in contact with me, through one of these links.</h2>
+        <LinkItem />
+      </section>
+    </StyledPageContainer>
   );
 }
 

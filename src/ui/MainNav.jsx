@@ -4,6 +4,7 @@ import { RiCodeView } from "react-icons/ri";
 import { IoHome } from "react-icons/io5";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdFolderCopy } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const NavList = styled.ul`
   display: flex;
@@ -52,33 +53,36 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 function MainNav() {
+  const { t } = useTranslation();
+  const { btn1, btn2, btn3, btn4 } = t("buttons");
+
   return (
     <nav>
       <NavList>
         <li>
           <StyledNavLink to="/">
             <IoHome />
-            <span>Home</span>
+            <span>{btn1}</span>
           </StyledNavLink>
         </li>
 
         <li>
           <StyledNavLink to="/projects">
             <MdFolderCopy />
-            <span>Projects</span>
+            <span>{btn2}</span>
           </StyledNavLink>
         </li>
 
         <li>
           <StyledNavLink to="/skills">
             <RiCodeView />
-            <span>Skills</span>
+            <span>{btn3}</span>
           </StyledNavLink>
         </li>
         <li>
           <StyledNavLink to="/contact">
             <BsTelephoneFill />
-            <span>Contact</span>
+            <span>{btn4}</span>
           </StyledNavLink>
         </li>
       </NavList>
