@@ -50,7 +50,7 @@ function ProjectContent() {
     <StlyedProjectContainer>
       <li>
         <a target="_blank" href="https://the-wild-oasis-ten-beta.vercel.app/">
-          <img src="../../public/img/the-wild-oasis.jpg" alt="the-wild-oasis" />
+          <img src="the-wild-oasis.jpg" alt="the-wild-oasis" />
           <h3> {theWildOasis}</h3>
         </a>
       </li>
@@ -60,21 +60,21 @@ function ProjectContent() {
           target="_blank"
           href="https://fast-react-pizza-seven-drab.vercel.app/"
         >
-          <img src="../../public/img/fast-pizza.jpg" alt="fast-pizza" />
+          <img src="fast-pizza.jpg" alt="fast-pizza" />
           <h3> {fastPizza}</h3>
         </a>
       </li>
 
       <li>
         <a target="_blank" href="https://worldwise-puce.vercel.app/">
-          <img src="../../public/img/wordwise.jpg" alt="wordwise" />
+          <img src="wordwise.jpg" alt="wordwise" />
           <h3> {worldwise}</h3>
         </a>
       </li>
 
       <li>
         <a target="_blank" href="https://the-react-quiz-eight.vercel.app/">
-          <img src="../../public/img/react-quiz.jpg" alt="react-quiz" />
+          <img src="react-quiz.jpg" alt="react-quiz" />
           <h3> {theReactQuiz}</h3>
         </a>
       </li>
