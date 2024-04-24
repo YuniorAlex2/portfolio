@@ -20,8 +20,40 @@ const GlobalStyles = createGlobalStyle`
   --color-red-500: #ef4444;
 
     /* blue */
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
   --color-blue-900: #1e3a8a;
   
+  /* Sky */
+  --color-sky-500: #0ea5e9;
+  --color-sky-400: #38bdf8;
+ 
+ /* Purple */
+
+--color-purple-500: #a855f7;
+--color-purple-600: #9333ea;
+
+ /* Lime */
+ --color-lime-400: #a3e635;
+ --color-lime-500: #84cc16;
+ --color-lime-600: #65a30d;
+ --color-lime-700: #4d7c0f;
+ --color-lime-800: #3f6212;
+
+ /* Green */
+ --color-green-400: #4ade80;
+ --color-green-500: #22c55e;
+
+ /* yellow */
+ --color-yellow-400: #facc15;
+ --color-yellow-500: #eab308;
+
+    /* Orange */
+  --color-orange-500: #f97316;
+  --color-orange-600: #ea580c;
+  --color-orange-700: #c2410c;
+
     /*grey */
   --color-grey-0: #18212f;
   --color-grey-50: #111827;
@@ -90,7 +122,7 @@ body {
   section ul {
     display: flex;
     list-style: none;
-    height: 25%;
+    height: 30%;
     align-items: center;
     justify-content: center;
     gap: 2.3rem;

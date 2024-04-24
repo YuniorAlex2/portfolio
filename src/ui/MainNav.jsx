@@ -5,6 +5,7 @@ import { IoHome } from "react-icons/io5";
 import { BsTelephoneFill } from "react-icons/bs";
 import { MdFolderCopy } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { useSidebar } from "../context/SidebarContext";
 
 const NavList = styled.ul`
   display: flex;
@@ -55,32 +56,45 @@ const StyledNavLink = styled(NavLink)`
 function MainNav() {
   const { t } = useTranslation();
   const { btn1, btn2, btn3, btn4 } = t("buttons");
+  const { dispatch } = useSidebar();
 
   return (
     <nav>
       <NavList>
         <li>
-          <StyledNavLink to="/">
+          <StyledNavLink
+            to="/"
+            onClick={() => dispatch({ type: "sidebar/close" })}
+          >
             <IoHome />
             <span>{btn1}</span>
           </StyledNavLink>
         </li>
 
         <li>
-          <StyledNavLink to="/projects">
+          <StyledNavLink
+            to="/projects"
+            onClick={() => dispatch({ type: "sidebar/close" })}
+          >
             <MdFolderCopy />
             <span>{btn2}</span>
           </StyledNavLink>
         </li>
 
         <li>
-          <StyledNavLink to="/skills">
+          <StyledNavLink
+            to="/skills"
+            onClick={() => dispatch({ type: "sidebar/close" })}
+          >
             <RiCodeView />
             <span>{btn3}</span>
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/contact">
+          <StyledNavLink
+            to="/contact"
+            onClick={() => dispatch({ type: "sidebar/close" })}
+          >
             <BsTelephoneFill />
             <span>{btn4}</span>
           </StyledNavLink>

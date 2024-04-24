@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 function LanguageBotton() {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState("es");
 
   function changeLanguage() {
     setLanguage((lng) => (lng === "en" ? "es" : "en"));

@@ -1,13 +1,24 @@
+import { useTranslation } from "react-i18next";
+import SkillsItem from "../components/SkillsItem";
 import AppNav from "../ui/AppNav";
-import Heading from "../ui/Heading";
+import StyledPageContainer, { variants } from "../ui/PageContainer";
 
 function Skills() {
+  const { t } = useTranslation();
+  const { heading } = t("skills");
   return (
-    <div>
+    <StyledPageContainer
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      variants={variants}
+    >
       <AppNav />
-      <Heading as="h1">Skills</Heading>
-      <Heading as="h3">description for the skills test</Heading>
-    </div>
+      <section>
+        <h2>{heading}</h2>
+        <SkillsItem />
+      </section>
+    </StyledPageContainer>
   );
 }
 

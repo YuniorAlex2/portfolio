@@ -1,13 +1,24 @@
+import { useTranslation } from "react-i18next";
+import ProjectContent from "../components/ProjectContent";
 import AppNav from "../ui/AppNav";
-import Heading from "../ui/Heading";
+import StyledPageContainer, { variants } from "../ui/PageContainer";
 
 function Projects() {
+  const { t } = useTranslation();
+  const { heading } = t("projects");
   return (
-    <div>
+    <StyledPageContainer
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      variants={variants}
+    >
       <AppNav />
-      <Heading as="h1">Projects</Heading>
-      <Heading as="h3">description for the projects test</Heading>
-    </div>
+      <section>
+        <h2>{heading}</h2>
+        <ProjectContent />
+      </section>
+    </StyledPageContainer>
   );
 }
 

@@ -1,14 +1,23 @@
 import AppNav from "../ui/AppNav";
 import LinkItem from "../components/LinkItem";
-import StyledPageContainer from "../ui/PageContainer";
+import StyledPageContainer, { variants } from "../ui/PageContainer";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+  const { heading, description } = t("contact");
+
   return (
-    <StyledPageContainer>
+    <StyledPageContainer
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      variants={variants}
+    >
       <AppNav />
       <section>
-        <h1>Contact Me!!</h1>
-        <h2>You can get in contact with me, through one of these links.</h2>
+        <h1>{heading}</h1>
+        <h2>{description}</h2>
         <LinkItem />
       </section>
     </StyledPageContainer>

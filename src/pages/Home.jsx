@@ -2,7 +2,7 @@ import AppNav from "../ui/AppNav";
 import Button from "../ui/Button";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import StyledPageContainer from "../ui/PageContainer";
+import StyledPageContainer, { variants } from "../ui/PageContainer";
 
 function Home() {
   const { t } = useTranslation();
@@ -10,7 +10,12 @@ function Home() {
   const { btn2, btn5 } = t("buttons");
 
   return (
-    <StyledPageContainer>
+    <StyledPageContainer
+      initial="hidden"
+      animate="visible"
+      exit="hidden"
+      variants={variants}
+    >
       <AppNav />
       <section>
         <h1>{t("greeting")}</h1>
